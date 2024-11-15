@@ -1,0 +1,374 @@
+@font-face { font-family: 'CustomFont'; src: url('otf/PPPlayground-Medium.otf'); }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('blue-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+   height: 200vh;
+    border: 20px solid beige; 
+  
+}
+
+.text1{
+    font-family: 'CustomFont', sans-serif;
+    color: beige;
+   
+text-align: center;
+align-items: center;
+ 
+    font-size: 150px;
+}
+
+.text2{
+    font-family: 'CustomFont', sans-serif;
+    color: beige;
+   
+text-align: center;
+align-items: center;
+ margin-top: -50px;
+    font-size: 35px;
+}
+
+.text3{
+    font-family: 'CustomFont', sans-serif;
+    color: beige;
+    font-size: 19px;
+    width: 50%;
+text-align: center;
+align-items: center;
+margin-top: 0px;
+margin-left: 25%;
+}
+.granny1{
+    width: 270px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.granny2{
+    width: 160px;
+    margin-left: -240px;
+    transition: ease-in 0.1s;
+}
+
+.granny2:hover,
+.grandfather2:hover, 
+.bro1:hover,
+.mom2:hover
+{
+    opacity: 0;
+}
+
+
+.grandfather1{
+    width: 330px;
+    margin-left: -30px;
+    margin-top: 105px;
+}
+
+.grandfather2{
+    width: 200px;
+    margin-left: -270px;
+    margin-top: 105px;
+    transition: ease-in 0.1s;
+}
+
+.bro{
+    width: 400px;
+    margin-left: -20px;
+    margin-top: 105px;  
+}
+
+.bro1{
+    width: 280px;
+    margin-left: -360px;
+    margin-top: 105px;
+    transition: ease-in 0.1s;
+}
+
+.mom1{
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 105px;  
+}
+
+.mom2{
+    width: 200px;
+  
+    margin-left: -200px;
+    margin-top: 105px;  
+    transition: ease-in 0.1s;
+    overflow: hidden;
+}
+
+.fam{
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -180px;
+z-index: -10;
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+.border1{
+
+  height: 65px;
+    background-color: beige;
+ margin-top: 6px;
+    position: absolute;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 45px;
+    color: rgb(43, 43, 43);
+    padding-top:5px ;
+}
+  
+.marquee {
+    width: 98vw;
+    overflow: hidden;
+  }
+  
+  .marquee-content {
+    white-space: nowrap;
+    display: flex;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee-content span {
+    white-space: nowrap;
+
+  
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .menu{
+    text-align: center;
+align-items: center;
+ 
+    margin-top: 100px;
+    font-size: 70px;
+    color: beige;
+  }
+
+  h1{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+  }
+
+.box1,
+.back{  background-color: beige;
+    width: 250px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    margin-top: -20px;
+    border: 6px solid rgb(43, 43, 43);
+    color: rgb(43, 43, 43);
+    backface-visibility: hidden;
+   
+}
+
+.back{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -425px;
+    transform: rotateY( 180deg );
+    height:400px ;
+}
+p{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 20px; 
+    line-height: 40px;
+}
+
+.line1{
+    width: 300px;
+    height: 5px;
+    background-color:beige;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -105px;  
+}
+
+.l1{
+    margin-top: -115px;
+}
+
+.line2{
+    width: 300px;
+    height: 5px;
+    background-color:beige;
+    position: absolute;
+    margin-left: 880px;
+    margin-top: -105px;  
+}
+
+.l2{
+    margin-top: -115px;  
+}
+
+.box2,
+.back2{
+    position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: beige;
+ padding-left: 20px;
+ padding-right: 20px;
+  border-radius: 20px;
+  height: 210px;
+ border: 6px solid rgb(43, 43, 43);
+ color: rgb(43, 43, 43);
+ width: 250px;
+ backface-visibility: hidden;
+}
+
+.back2{
+    transform: rotateY( 180deg );
+  
+}
+
+.up{
+    margin-top: 10px;
+}
+
+.up2{
+    margin-top: -20px;
+}
+
+.box3, .back3{
+    /* margin-top: -425px;
+  margin-left: 670px; */
+  background-color: beige;
+ padding-left: 20px;
+ padding-right: 20px;
+  border-radius: 20px;
+  height: 415px;
+ border: 6px solid rgb(43, 43, 43);
+ color: rgb(43, 43, 43);
+ width: 262px;
+ padding-left: 30px;
+ padding-right: 30px;
+ backface-visibility: hidden;
+
+}
+
+.back3{
+    transform: rotateY( 180deg );
+  position: absolute;
+  margin-top: -425px;
+  margin-left: -70px;
+}
+
+h2{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 70px;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 1025px;
+    color: beige;
+}
+.img1-franks{
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 355px;
+    width: 300px;
+    height: 187px;
+    border-radius: 20px;
+}
+
+.full-menu{
+    margin-left: 180px;
+}
+
+.content, .content2, .content3{
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content, .card2:hover .content2, .card3:hover .content3 {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+  }
+
+  .card{
+    width: 300px;
+  }
+
+  .card2{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-top: -425px;
+    margin-left: 355px;
+ 
+  }
+
+  .card3{
+    position:absolute ;
+    margin-top: -425px;
+    margin-left: 670px;
+    height: 415px;
+    width: 262px;
+  }
+
+
+
+  .franks2{
+    margin-left: -25px;
+    border-radius: 20px;
+    height: 410px;
+    width: 300px;
+    margin-top: -5px;
+  }
+
+  .franks3{
+    margin-left: -15px;
+    width: 280px;
+    margin-top: 5px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .franks4{
+    border-radius: 20px;
+    margin-left: -26px;
+    height: 405px ;
+    width: 313px;
+    margin-top: 5px;
+  }
+
+  .next-page{
+    position: absolute;
+    font-size: 70px;
+    color: beige;
+margin-top: -1410px;
+margin-left:1320px ;
+
+}
+
+.next-page:hover{
+    transform: scale(1.2);
+}
+
