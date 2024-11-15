@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="overlooked.css">
+</head>
+<body>
+
+    <div class="bg1"></div>
+
+    <div class="text4">TRADER JOE'S</div>
+
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+
+
+<div class="grid-container">
+    <button class="box" onclick="openModal('modal1')">
+      <img class="sauce" src="sauce.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal2')">
+      <img class="dumplings" src="dumplings.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal3')">
+      <img class="salad" src="salad.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal4')">
+      <img class="chicken" src="chicken.webp">
+    </button>
+
+    <div class="box text1">Food is essential for international students when familiar options are scarce. I had never cooked before, so my first grocery trip was quite an experience. Trader Joe’s surprised me with its friendly atmosphere and spacious aisles, where I filled my cart with frozen meals that helped me start my cooking journey and adapt to my new life.</div>
+
+    <button class="box" onclick="openModal('modal5')">
+      <img class="chili" src="chili.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal6')">
+      <img class="tikka" src="tikka.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal7')">
+      <img class="patty" src="patty.webp">
+    </button>
+
+    <button class="box" onclick="openModal('modal8')">
+      <img class="noodles" src="noodles.webp">
+    </button>
+  </div>
+
+  <!-- Modals for each image -->
+  
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img class="recipe" src="pasta.jpg">
+      <button class="next" onclick="nextModal(1)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img class="recipe" src="dumplings.jpg">
+      <button class="next" onclick="nextModal(2)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <img class="recipe" src="salad.jpg">
+      <button class="next" onclick="nextModal(3)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <img class="recipe" src="pesto.jpg">
+      <button class="next" onclick="nextModal(4)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <img class="recipe" src="chili.jpg">
+      <button class="next" onclick="nextModal(5)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal6')">&times;</span>
+      <img class="recipe" src="tikka.jpg">
+      <button class="next" onclick="nextModal(6)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal7')">&times;</span>
+      <img class="recipe" src="veggie.jpg">
+      <button class="next" onclick="nextModal(7)"> &gt; </button>
+    </div>
+  </div>
+
+  <div id="modal8" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal8')">&times;</span>
+      <img class="recipe" src="noodles.jpg">
+      <button class="next" onclick="nextModal(8)"> &gt; </button>
+    </div>
+  </div>
+
+  <div class="switcher-container">
+    <img id="switcher-image" src="bill0.jpg"  class="bill1" onclick="switchImage()">
+</div>
+
+<div class="text5">Trader Joe’s feels like a slice of suburbia nestled in Manhattan, where friendly conversations are easy and the aisles are refreshingly spacious. It’s a place where the hustle of the city fades, allowing for a relaxed shopping experience. It was here that I gained the confidence to navigate my new independence, marking my first steps into adulthood. With each visit, I embraced responsibility and discovered a sense of belonging, making it a unique gem amidst the typical New York chaos. Even the prices seem different—more approachable and less overwhelming.</div>
+
+<a 
+class="next-page" 
+href="../destroy-homepage.html" target="_blank" style="text-decoration:none;">
+<img src="home.png" class="home">
+</a>
+
+  <script src="overlooked.js"></script>
+</body>
+</html>

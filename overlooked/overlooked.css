@@ -1,0 +1,201 @@
+
+@font-face { font-family: 'CustomFont'; src: url('PPRightSans-Medium.otf'); }
+
+@font-face { font-family: 'CustomFont1'; src: url('PPRightSans-CompactDark.otf'); }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('blue-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+   height: 100vh;
+   overflow: hidden; 
+  
+}
+
+.line1{
+    background-color: antiquewhite;
+    width: 900px;
+    height: 10px;
+    margin-top: 140px;
+    margin-left: 50px;
+}
+
+.line2{
+    background-color: antiquewhite;
+    width: 900px;
+    height: 10px;
+    margin-top: 200px;
+    margin-left: 50px; 
+}
+
+.line3{
+    background-color: antiquewhite;
+    width: 900px;
+    height: 10px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+
+
+
+.sauce{
+    position: absolute;
+    width: 80px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 100px;
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 110px;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .salad, .dumplings,  .chili,  .noodles{
+    width: 120px;
+  }
+
+  .chicken{
+    width: 100px;
+    transform: rotate(90deg);
+  }
+
+  .tikka, 
+.patty{
+width: 180px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    text-align: center;
+    margin-top:140px;
+    margin-left: -55px;
+  }
+  
+  
+  .close {
+    position: absolute;
+   margin-top: 0px;
+   padding-left: 810px;
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: blanchedalmond;
+  }
+
+  button{
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .recipe{
+    width: 800px;
+
+  }
+
+  .next{
+position: relative;
+    font-size: 30px;
+    top: -470px;
+    color: blanchedalmond;
+  }
+
+  .text1{
+    width: 380px;
+    font-size: 15px;
+    margin-left: -70px;
+    margin-top: -50px;
+    font-family: 'CustomFont', sans-serif;
+    line-height: 23px;
+    color: blanchedalmond;
+  }
+
+  .text4{
+    font-family: 'CustomFont1', sans-serif;
+    color: blanchedalmond;
+    font-size: 90px;
+  margin-left: 280px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  }
+
+  .switcher-container {
+    position: relative;
+}
+
+.bill1 {
+   width: 250px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -650px;
+    margin-left: 1050px;
+    
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(900px); 
+        
+    }
+}
+
+.fall {
+    animation: fall 1s forwards; /* Animation lasts 1 second */
+}
+
+.text5{
+    width: 240px;
+    font-size: 16px;
+    margin-left: 1060px;
+    margin-top: -600px;
+    font-family: 'CustomFont', sans-serif;
+    line-height: 23px;
+    color: blanchedalmond;
+    line-height: 30px;
+}
+
+.next-page{
+  position: absolute;
+
+  color: beige;
+margin-top: -630px;
+margin-left:1350px ;
+
+}
+
+.home{
+  width: 50px;
+}
+
+.next-page:hover{
+  transform: scale(1.2);
+}
