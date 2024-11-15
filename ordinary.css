@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('blue-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ overflow: hidden;  
+ display: flex;
+ justify-content: center;  /* Horizontally centers the grid */
+ align-items: center; 
+  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+
+    
+}
+
+.grid-item {
+    text-align: center;
+margin-top: -50px;
+margin-left: -20px;
+}
+
+.tv{
+    width: 300px;
+
+}
+
+.vid1{
+    z-index: -10;
+    width: 270px;
+    height: 220px;
+    margin-top: 22px;
+    margin-left: -5px;
+    position: absolute;
+
+}
+
+.vid2{
+    z-index: -10;
+    width: 270px;
+    height: 220px;
+    margin-top: 22px;
+    margin-left: -845px;
+    position: absolute; 
+}
+
+.vid3{
+    width: 270px;
+    height: 220px;
+    margin-top: 22px;
+    position: absolute; 
+    margin-left: -285px;
+    z-index: -10;
+}
+
+
+
+.circle {
+    position: absolute;
+    margin-left: -340px;
+    margin-top: 250px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #002c85;
+    box-shadow: inset 10px 10px 22px #001235,
+                inset -10px -10px 22px #0046d5;
+                transition: all 0.2s ease;
+}
+
+.glow {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.72),
+    inset 10px 10px 22px #0156ff,
+    inset -10px -10px 22px #689aff;
+}
+
+.circle2{
+    position: absolute;
+margin-left: -350px;
+    margin-top: 540px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #002c85;
+    box-shadow: inset 10px 10px 22px #001235,
+                inset -10px -10px 22px #0046d5;
+}
+
+.circle3{
+    position: absolute;
+margin-left: -70px;
+    margin-top: 540px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #002c85;
+    box-shadow: inset 10px 10px 22px #001235,
+                inset -10px -10px 22px #0046d5;
+}
+
+.knobs, .knobs2 {
+    width: 150px;
+    position: absolute;
+    transition: transform 0.5s ease; /* Smooth rotation */
+}
+
+.knobs {
+    left: 50px;
+    top: 370px;
+}
+
+.knobs2 {
+    left: 50px;
+    top: 150px;
+}
+
+.rotate {
+    transform: rotate(90deg); /* Rotate 90 degrees clockwise */
+}
+
+
+.text1{
+    font-family: 'CustomFont', sans-serif;
+    color: beige;
+    font-size: 16px;
+    width: 35%;
+    margin-top: -190px;
+    line-height: 29px;
+}
+
+@font-face { font-family: 'CustomFont'; src: url('otf/PPEditorialOld-Italic.otf'); }
+
+
+
+#toggleButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.circle:active {
+    
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.72),
+    inset 10px 10px 22px #0156ff,
+    inset -10px -10px 22px #689aff;
+    transform: translateY(8px);
+    box-shadow: 0 5px 4px #4281ff;
+}
+
+.text2{
+    font-family: 'CustomFont', sans-serif;
+    color: beige;
+    position: absolute;
+
+    top: 20px;
+    font-size: 40px;
+}
+
+
+.speaker{
+    position: absolute;
+    right: 100px;
+    top: 220px;
+    width: 200px;
+}
+
+.bench7{
+    position: absolute;
+    width: 220px;
+    left: 250px;
+}
+
+.bench8{
+    position: absolute;
+    width: 200px;
+    left: 900px;
+    margin-top: 10px;
+}
+
+.bench9{
+    position: absolute;
+    width: 200px;
+    left: 690px;
+}
+.bench10{
+    position: absolute;
+    width: 200px;
+    margin-left:-50px;
+}
+
+.next-page{
+    position: absolute;
+    font-size: 70px;
+    color: beige;
+margin-top: -630px;
+margin-left:1300px ;
+
+}
+
+.next-page:hover{
+    transform: scale(1.2);
+}
